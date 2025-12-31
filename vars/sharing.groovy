@@ -15,7 +15,7 @@ def deploy(name, ip, aname)
 
 def dep(name, ip, aname)
 {
-  sh "/home/ubuntu/folder/workspace/${name}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat10/${aname}.war"
+  sh "scp /home/ubuntu/folder/workspace/${name}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat10/${aname}.war"
 }
 
 def selinium(name)
