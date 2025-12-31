@@ -22,3 +22,7 @@ def selinium(name)
 {
   sh "java -jar /var/lib/jenkins/workspace/${name}/testing.jar"
 }
+
+def sel(name)
+{
+  sh "java -jar /home/ubuntu/folder/workspace/${name}/testing.jar"
