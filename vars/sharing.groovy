@@ -26,3 +26,4 @@ def selinium(name)
 def sel(name)
 {
   sh "java -jar /home/ubuntu/folder/workspace/${name}/testing.jar"
+}
