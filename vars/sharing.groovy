@@ -26,7 +26,7 @@ scp target/webapp.war ubuntu@172.31.11.78:/var/lib/tomcat10/pro.war
 '''
 }
 
-def pod
+def pod()
 {
   sh '''
 export HOME=/home/ubuntu
