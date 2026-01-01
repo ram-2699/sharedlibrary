@@ -18,6 +18,13 @@ def dep(name, ip, aname)
   sh "scp /home/ubuntu/folder/workspace/${name}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat10/${aname}.war"
 }
 
+def dop(name, ip, anm)
+{
+  sh '''
+export HOME=/home/ubuntu
+scp target/webapp.war ubuntu@172.31.11.78:/var/lib/tomcat10/pro.war
+'''
+}
 def selinium(name)
 {
   sh "java -jar /var/lib/jenkins/workspace/${name}/testing.jar"
